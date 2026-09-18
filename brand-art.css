@@ -17,7 +17,31 @@
 @keyframes supplied-paper-open{0%,10%{clip-path:inset(0 49.5%)}44%,100%{clip-path:inset(0 10%)}}
 @keyframes supplied-left-open{0%,10%{transform:translateX(40%)}44%,100%{transform:translateX(0)}}
 @keyframes supplied-right-open{0%,10%{transform:translateX(-40%)}44%,100%{transform:translateX(0)}}
-@media(min-width:901px){.craft-stage{width:40%;max-width:440px;right:12px}.work-title{padding-right:43%;min-height:270px}}
+@media(min-width:901px){.craft-stage{width:43%;max-width:490px;right:32px}.work-title{padding-right:48%;min-height:294px}}
 @media(max-width:1250px) and (min-width:681px){.sidebar .brand-mark{width:60px;height:60px}.sidebar .brand{padding-inline:0}}
 @media(max-width:680px){.sidebar .brand-mark{width:42px;height:42px}.product-wordmark .image-wordmark{width:145px;height:39px}.product-wordmark>span{display:none!important}.craft-stage{max-width:420px}.topbar{min-height:65px}.supplied-scroll{width:100%}}
 @media(prefers-reduced-motion:reduce){.supplied-scroll .scroll-paper{clip-path:inset(0 10%)}.supplied-scroll .scroll-roller{transform:none;left:0;right:0}}
+
+/* Machined action plates: live HTML labels and original click handlers. */
+.inventory-card .btn[data-inspect],.inventory-card .btn[data-discover]{
+ --plate-light:#8ccaff;position:relative;isolation:isolate;min-height:58px;padding:12px 20px;gap:6px;
+ border:3px solid #8099be;border-radius:14px;background:
+ linear-gradient(110deg,#b6cbea33,transparent 30%,#020a2077 60%,#a6bcdd22),
+ repeating-linear-gradient(0deg,#c8ddff09 0 1px,transparent 1px 3px),linear-gradient(#203d65,#0c1d39 55%,#20365a);
+ box-shadow:0 2px 0 #020b1d,0 5px 12px #0005,inset 0 0 0 1px #e4edff,inset 0 0 0 3px #08162b,inset 0 0 0 4px var(--plate-light),inset 0 7px 9px #d2e4ff22,inset 0 -5px 8px #030c23;
+ color:#eef4ff;font-size:14px;font-weight:600;letter-spacing:0;text-shadow:0 1px 2px #020818;
+ transition:box-shadow .18s,border-color .18s,transform .12s;
+}
+.inventory-card .btn[data-discover]{--plate-light:#b2a6ff}
+.inventory-card .btn[data-inspect]::before,.inventory-card .btn[data-inspect]::after,
+.inventory-card .btn[data-discover]::before,.inventory-card .btn[data-discover]::after{
+ content:'';display:block;position:absolute;top:3px;bottom:3px;width:17px;pointer-events:none;z-index:-1;
+ background:radial-gradient(circle at center,#091326 0 2px,#718aa9 2.5px,#eff5ff 3px,#536985 4px,#08172e 5px,transparent 6px),repeating-linear-gradient(135deg,#c5d2e419 0 1px,transparent 1px 3px),linear-gradient(110deg,#324964,#d8e5f5 30%,#7388a5 65%,#243954);
+}
+.inventory-card .btn[data-inspect]::before,.inventory-card .btn[data-discover]::before{left:3px;border-radius:8px 0 0 8px;clip-path:polygon(0 0,100% 0,60% 24%,60% 76%,100% 100%,0 100%)}
+.inventory-card .btn[data-inspect]::after,.inventory-card .btn[data-discover]::after{left:auto;right:3px;border-radius:0 8px 8px 0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,40% 76%,40% 24%)}
+.inventory-card .btn[data-inspect] svg,.inventory-card .btn[data-discover] svg{width:19px;height:22px;padding-left:6px;box-sizing:content-box;border-left:1px solid #9cb6dd66;filter:drop-shadow(0 0 3px var(--plate-light))}
+.inventory-card .btn[data-inspect]:hover,.inventory-card .btn[data-discover]:hover{border-color:#dae8ff;box-shadow:0 3px 12px #0006,inset 0 0 0 1px #edf5ff,inset 0 0 0 3px #08162b,inset 0 0 0 4px var(--plate-light),inset 0 0 18px #a8caff27}
+.inventory-card .btn[data-inspect]:active,.inventory-card .btn[data-discover]:active{transform:translateY(2px)}
+.inventory-card .btn[data-inspect]:focus-visible,.inventory-card .btn[data-discover]:focus-visible{outline:3px solid #d4c7ff;outline-offset:4px}
+@media(max-width:1100px) and (min-width:681px){.inventory-card .btn[data-inspect],.inventory-card .btn[data-discover]{font-size:14px;padding-inline:22px;gap:5px}.inventory-card .btn[data-inspect] svg,.inventory-card .btn[data-discover] svg{width:19px;height:19px}}
