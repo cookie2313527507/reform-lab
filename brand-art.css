@@ -1,6 +1,7 @@
 /* Supplied brand artwork; independent full-resolution paper and roller layers. */
 /* Native popup menus can use a light OS surface even inside the dark UI. */
-select,select.control,select:focus,select:hover,select option,select option:checked,select option:hover,select optgroup{color:#000!important;background:#fff!important;text-shadow:none!important;-webkit-text-fill-color:#000!important;color-scheme:light!important;opacity:1!important}
+select,select.control{color:#eef2ff!important;background:#101c35!important;-webkit-text-fill-color:#eef2ff!important;color-scheme:light!important;box-shadow:inset 0 1px 5px #0004!important}
+select:open,select.control:open,select option,select option:checked,select option:hover,select optgroup{color:#000!important;background:#e4dff5!important;text-shadow:none!important;-webkit-text-fill-color:#000!important;opacity:1!important}
 .quick-guide{margin-bottom:14px;border:1px solid #7186ac66;border-radius:6px;padding:10px 14px;background:#111d35;color:#dce7ff;font-size:14px}
 .quick-guide summary{cursor:pointer;font-weight:600;min-height:24px}.quick-guide summary:focus-visible{outline:2px solid #c5bcff;outline-offset:3px}
 .guide-paths{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:16px 0}.quick-guide p{line-height:1.8;margin:7px 0;color:#b6c6e0}.inventory-count{white-space:normal}
