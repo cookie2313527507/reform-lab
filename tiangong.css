@@ -1,0 +1,111 @@
+/* 天工 · RE:FORM — illuminated metal, contemporary engraved craft */
+:root{--bg:#070b1c;--surface:#11182f;--ink:#edf0ff;--muted:#a0aed0;--line:#3b4165;--radius:18px}
+body{background:#070b1c}
+.shell{isolation:isolate;background:radial-gradient(ellipse at 78% 7%,#5845af55,transparent 37%),radial-gradient(ellipse at 10% 38%,#145ca032,transparent 42%)}
+.main{position:relative;isolation:isolate}
+.main::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:linear-gradient(180deg,#080e2266,#080d2088 50%,#080d20);opacity:.8}
+.sidebar{background:linear-gradient(175deg,#191b36f5,#0b1125f8 65%);border-right:1px solid #7565c13d;box-shadow:5px 0 35px #03051544}
+.brand-mark{background:linear-gradient(135deg,#899aff,#6750ba 65%,#a87dde);border-color:#e0c7ff80;box-shadow:0 0 24px #7966fb44,inset 0 0 14px #cfb4ff30;border-radius:12px 4px 12px 4px}
+.nav-item.active{background:linear-gradient(130deg,#6961a952,#30336b66);border:1px solid #b8a3ff4d;box-shadow:inset 3px 0 #b99eff,0 8px 28px #21123b40}
+.topbar{height:72px;background:linear-gradient(100deg,#0d132be8,#1a1732c9,#10182dda);border-bottom:1px solid #887cb444;position:relative}
+.topbar::after{content:'';position:absolute;left:30px;bottom:-1px;width:145px;height:1px;background:linear-gradient(90deg,#76d8ff,#b68bff,transparent);box-shadow:0 0 10px #7d83ff}
+.product-wordmark strong{letter-spacing:4px;font-weight:600}
+.product-wordmark>span{letter-spacing:2.5px;color:#9fadd0}
+.workspace{padding-top:22px}
+.page-title{position:relative;isolation:isolate;overflow:hidden;min-height:176px;padding:26px 30px;margin-bottom:24px;border:1px solid #a594d650;border-radius:20px;background:linear-gradient(110deg,#101a33,#25224c 60%,#433172);box-shadow:0 20px 48px #03051844,inset 0 1px 0 #e3d8ff14;gap:22px}
+.page-title::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0b1222e6,#0e15267a 55%,#11182b05);pointer-events:none}
+.page-title::after{content:'';position:absolute;left:30px;right:30px;bottom:0;height:1px;background:linear-gradient(90deg,#76ceffbb,#b79afe99,transparent);pointer-events:none}
+.page-title h1{font-size:clamp(1.65rem,2.4vw,2.65rem);font-weight:600;letter-spacing:2px;text-shadow:0 2px 24px #060821;line-height:1.5}
+.page-title h1 span{background:linear-gradient(90deg,#a5d9ff,#bea6ff 55%,#ead7ff);background-clip:text;-webkit-background-clip:text}
+.page-title p{font-size:14px;color:#c0cbe1;line-height:1.8;max-width:580px}
+.eyebrow{color:#c4b1e7;letter-spacing:2px;line-height:1.6;font:12px/1.6 var(--mono)}
+.title-actions{align-self:flex-end;flex-shrink:0;position:relative;z-index:1;gap:12px}
+.title-actions .btn,.page-title>.btn{background:#151c3bba;backdrop-filter:blur(12px);border-color:#a59bdc77;color:#efeaff}
+.work-grid{gap:20px}
+.panel{background:linear-gradient(135deg,#202342ed,#101a30f5);border-color:#8b85c342;box-shadow:0 12px 36px #02051655,inset 0 1px 0 #dbd6ff12}
+.panel-head{background:linear-gradient(110deg,#59518321,#163f6421);border-bottom:1px solid #9b92cf30}
+.panel-head h2{font-size:16px;letter-spacing:1px}
+.panel-kicker{color:#a99ecb;letter-spacing:1.7px}
+.constraints{border-top:2px solid #8ebfff88}
+.constraints .panel-head>svg{color:#b2d2ff}
+.label,.field-heading .label,.switch-row,.section-label{font-size:14px}
+.section-label{color:#b5c2de;letter-spacing:1px}
+.control{background:linear-gradient(100deg,#0b132be8,#111832);border-color:#6d749b69;box-shadow:inset 0 2px 5px #0407183d}
+.control:hover{border-color:#9c9fcb}
+.range-field{background:linear-gradient(110deg,#3b375b44,#17283c44);border-color:#9f93d53d}
+.range-value output{color:#d1c2ff;text-shadow:0 0 16px #8c69f45c}
+.lock-note{background:linear-gradient(100deg,#20425d66,#312b5766);border-color:#82b6d536}
+.btn.primary{background:linear-gradient(110deg,#4f85ee,#8655d4 74%,#af74e1);border-color:#c4adff80;box-shadow:0 5px 25px #7060f045,inset 0 1px #eee4ff33}
+.btn.primary:hover{background:linear-gradient(110deg,#6e9eff,#a273f0 74%,#c591f5);box-shadow:0 6px 30px #846afa66}
+.canvas-panel{border:1px solid #a799ed77;box-shadow:0 15px 40px #02061777,0 0 24px #7460dc14}
+.canvas-panel .panel-head{background:linear-gradient(100deg,#30406899,#373055aa)}
+.drawing{background-color:#091329;background-image:linear-gradient(#779bec19 1px,transparent 1px),linear-gradient(90deg,#779bec19 1px,transparent 1px),radial-gradient(ellipse at 53% 48%,#674cc34f,transparent 68%);box-shadow:inset 0 0 70px #03061988}
+.drawing.no-grid{background-image:radial-gradient(ellipse at 53% 48%,#674cc34f,transparent 68%)}
+.drawing>svg{position:relative;z-index:1;max-width:calc(100% - 40px)}
+.drawing::before{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 28%,#94a7ff08 40%,transparent 52%);animation:viewport-light 7s ease-in-out 3;opacity:.8}
+.material-outline{filter:drop-shadow(0 0 6px #4b9bd933)}
+.part-outline{filter:drop-shadow(0 0 9px #b78dff40)}
+.legend{background:linear-gradient(90deg,#1b2844,#25223e);color:#c1cbe2}
+.metric{border-color:#9892cc44;background:linear-gradient(135deg,#293459a3,#151d33e6);box-shadow:inset 0 1px #d1ceff10,0 8px 22px #03091a22}
+.metric.emphasis{background:linear-gradient(135deg,#563a7977,#21233ee8);border-color:#c19ae45c}
+.metric .num{color:#b0d5ff;text-shadow:0 0 20px #85a8ff33}
+.metric.emphasis .num{color:#d3b5ff;text-shadow:0 0 20px #b084ff4d}
+.metric-code{font-size:12px}
+.decision{border-top:2px solid #c39cff99;background:radial-gradient(ellipse at 50% 14%,#734da341,transparent 44%),linear-gradient(140deg,#232641f5,#101a30f5)}
+.decision-title{color:#f0e5ff}
+.util-gauge{border-radius:50%;background:radial-gradient(circle,#9a79da22,transparent 65%);box-shadow:0 0 0 8px #baa7fa06,0 0 0 9px #baa7fa16,0 0 35px #8670e21f;margin-top:12px;margin-bottom:24px}
+.gauge-value{stroke:#c0a0ff;filter:drop-shadow(0 0 5px #b492ff99)}
+.decision-desc,.check,.change-row,.decision-actions .btn{font-size:14px}
+.decision-desc,.check{color:#bbc7e1}
+.dimension-comparison{background:#0a122b8c;border-color:#7c70b54d}
+.candidate-section{padding-top:12px}
+.section-heading{padding:18px 0 19px;border-bottom:1px solid #9c8ac83b}
+.section-heading h2{font-size:22px;letter-spacing:1px}
+.section-heading p{color:#a8b4d0}
+.material-card{border-color:#8e88b44d;background:linear-gradient(135deg,#272c4ce8,#111b30f5);box-shadow:inset 0 1px #dfd4ff0c,0 8px 25px #0306153d}
+.material-card.selected{background:linear-gradient(135deg,#65508085,#242443f0);border-color:#c5a1ffbb;box-shadow:0 0 24px #a480f12e,inset 0 1px #e7c8ff33}
+.material-card:hover{border-color:#c2b3f1;box-shadow:0 14px 34px #08041c77,0 0 15px #ad97f11a}
+.material-visual{height:98px;border-radius:9px;background:radial-gradient(ellipse at 50% 55%,#9285cb24,transparent 68%),linear-gradient(145deg,#090f213b,#37406922);border-bottom:1px solid #8277b526}
+.mini-shape polygon,.inventory-card svg polygon{fill:#658ed02e;stroke:#9abdff;filter:drop-shadow(0 5px 9px #579aff44)}
+.selected .mini-shape polygon{fill:#ba99f333;stroke:#d0b2ff;filter:drop-shadow(0 4px 9px #b385ff55)}
+.card-bottom strong{color:#b2cfff}
+.selected .card-bottom strong{color:#d9baff}
+.inventory-card{background:linear-gradient(135deg,#2c2c4eee,#121d34f5);border-top:2px solid #958bd655}
+.method-card{background:linear-gradient(130deg,#3c315ad9,#17233ce8)}
+.method-number{color:#d1b0ed;text-shadow:0 0 25px #a780ff3b}
+.method-card p,.method-card li{font-size:16px;line-height:1.9;color:#c3cde4}
+.simulation-note{color:#a0b0d0}
+@keyframes viewport-light{0%,100%{opacity:.15;transform:translateX(-12%)}50%{opacity:.85;transform:translateX(12%)}}
+@media(max-width:1250px){.page-title{padding:24px;min-height:180px}.page-title h1{font-size:28px}.work-grid{gap:18px}.title-actions{flex-direction:column;align-items:flex-end}.decision-desc,.check{font-size:14px}}
+@media(max-width:900px){.page-title{min-height:185px;padding:22px;align-items:flex-start;flex-wrap:wrap}.page-title h1{font-size:27px}.page-title p{font-size:14px;max-width:430px}.title-actions{margin-left:auto;align-self:flex-end}.work-grid{gap:14px}.topbar{height:68px}.decision .panel-body{gap:20px}.section-heading h2{font-size:20px}.drawing>svg{max-width:calc(100% - 24px)}}
+@media(max-width:680px){.workspace{padding:16px 13px 30px}.page-title{padding:22px 20px;min-height:205px;gap:15px;border-radius:15px}.page-title h1{font-size:27px;letter-spacing:1px}.page-title p{font-size:14px;max-width:330px}.page-title .eyebrow{font-size:12px;max-width:none;letter-spacing:.8px}.page-title .btn{font-size:14px;padding:8px 12px}.title-actions{align-self:auto;margin-left:0;flex-direction:row}.topbar{height:60px}.work-grid{gap:18px}.label,.field-heading .label,.switch-row{font-size:14px}.panel-head h2{font-size:16px}.section-heading{align-items:flex-start;gap:12px}.section-heading h2{font-size:18px}.section-heading p{max-width:130px}.material-visual{height:85px}.decision-actions{flex-wrap:wrap}.decision-desc,.check{font-size:14px}.inventory-card h3{font-size:14px}.method-card{padding:21px}.method-card p,.method-card li{font-size:16px}.page-title>.btn{align-self:flex-start}}
+@media(prefers-reduced-motion:reduce){.drawing::before{animation:none;transform:none}}
+
+/* Original generated imagery: atmospheric, separate from computed geometry. */
+.main::before{background-image:linear-gradient(180deg,#090e2130,#090e2166 48%,#090e21cc),url('./assets/craft-to-code.png');background-size:100% 100%,100% auto;background-repeat:no-repeat,repeat-y;background-position:0 0,center 150px;opacity:.54}
+.page-title{background-image:url('./assets/metal-reformation.png');background-size:cover;background-position:center 48%;background-color:#0a1227}
+.page-title::before{background:linear-gradient(90deg,#091021e8 0%,#0b1325c9 35%,#0b112844 68%,#11152915)}
+.page-title>div:first-child{position:relative;z-index:1}
+.page-title>div:first-child>p{max-width:510px}
+.work-title{display:block;min-height:216px;padding:23px 30px}
+.work-title .eyebrow{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-bottom:10px;color:#b6c1e4}
+.theme-chip{display:inline-block;color:#ead8ff;letter-spacing:2px;border:1px solid #b293d775;background:linear-gradient(110deg,#65487466,#31315c55);padding:4px 9px;border-radius:4px;font-family:'Microsoft YaHei',sans-serif}
+.work-title h1{font-size:clamp(1.8rem,2.5vw,2.6rem);line-height:1.4}
+.work-title .title-actions{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;margin:16px 0 0;gap:16px}
+.work-title .title-actions .btn{min-height:34px;padding:6px 12px;font-size:13px}
+.work-title .live-indicator{display:flex;font-size:12px;color:#bcccf1}
+.work-title .title-actions .live-indicator{order:1}
+.work-title .title-actions .btn{order:0}
+.craft-footer{position:relative;isolation:isolate;overflow:hidden;min-height:210px;margin-top:38px;display:grid;place-items:center;text-align:center;border-top:1px solid #b2a3d657;border-bottom:1px solid #8475ba30;border-radius:18px;background:#101831 url('./assets/craft-to-code.png') center 56%/cover;box-shadow:0 12px 45px #05081d44}
+.craft-footer::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#10162a08,#0d132352 30%,#0d132378 50%,#0c13243d 72%,#0d132210)}
+.craft-kicker{font:12px var(--mono);color:#c2b4e6;letter-spacing:3px}
+.craft-footer p{font-size:clamp(1.3rem,2vw,1.8rem);letter-spacing:4px;line-height:1.7;margin:13px 0 9px;color:#ebe6fc;text-shadow:0 2px 15px #050918}
+.craft-caption{color:#b3bedc;font-size:13px;letter-spacing:4px}
+.craft-footer small{position:absolute;bottom:12px;right:17px;font-size:12px;color:#9fa9c1}
+.candidate-section .section-heading{position:relative;background:linear-gradient(90deg,#171c33a3,#211e3344,transparent);padding-left:18px;border-left:2px solid #bc9ee6;border-radius:3px}
+.inventory-card:nth-child(3n+2){border-top-color:#b897ce88}
+.inventory-card:nth-child(3n){border-top-color:#7cbed088}
+.method-card{background-image:linear-gradient(115deg,#202239f5,#1d2542e6),url('./assets/craft-to-code.png');background-size:cover}
+@media(min-width:1600px){.work-title{min-height:230px}.page-title{background-position:center 48%}.craft-footer{min-height:250px}}
+@media(max-width:900px){.work-title{min-height:220px}.work-title .eyebrow>span:last-child{display:none}.page-title{background-position:62% 50%}.page-title::before{background:linear-gradient(90deg,#091021ef,#0b1325b3 55%,#11152930)}.page-title p{max-width:400px}.craft-footer{min-height:200px}}
+@media(max-width:680px){.work-title{min-height:218px;padding:21px 20px}.work-title h1{font-size:28px}.work-title .title-actions{gap:12px;margin-top:14px;flex-wrap:wrap}.work-title .live-indicator{font-size:12px}.work-title .title-actions .btn{font-size:13px}.page-title{background-position:61% center}.page-title::before{background:linear-gradient(90deg,#091021eb,#091021c2 48%,#09102140)}.page-title>div:first-child>p{max-width:280px}.craft-footer{min-height:220px;margin-top:28px;background-position:center center}.craft-footer p{font-size:20px;letter-spacing:2px}.craft-caption{font-size:12px;letter-spacing:2px}.craft-kicker{letter-spacing:1.5px}.craft-footer small{right:0;left:0;font-size:12px}.candidate-section .section-heading{padding-left:12px}}
