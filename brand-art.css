@@ -1,4 +1,8 @@
 /* Supplied brand artwork; independent full-resolution paper and roller layers. */
+.quick-guide{margin-bottom:14px;border:1px solid #7186ac66;border-radius:6px;padding:10px 14px;background:#111d35;color:#dce7ff;font-size:14px}
+.quick-guide summary{cursor:pointer;font-weight:600;min-height:24px}.quick-guide summary:focus-visible{outline:2px solid #c5bcff;outline-offset:3px}
+.guide-paths{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:16px 0}.quick-guide p{line-height:1.8;margin:7px 0;color:#b6c6e0}.inventory-count{white-space:normal}
+@media(max-width:680px){.guide-paths{grid-template-columns:1fr}.quick-guide{font-size:14px}}
 .sidebar .brand-mark{width:76px;height:76px;padding:0;border:0;outline:0;background:none;box-shadow:none;transform:none;border-radius:50%;overflow:hidden;flex:none}
 .brand-mark img{display:block;width:100%;height:100%;object-fit:cover}
 .product-wordmark .image-wordmark{position:relative;display:block;width:215px;height:53px;overflow:hidden;flex:none;margin:0;background:none}

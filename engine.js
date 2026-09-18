@@ -77,7 +77,8 @@
   if(!placement&&negotiate){
    const dims=[];
    for(let dw=0;dw<=(c.lockW?0:c.flexW);dw+=1)for(let dh=0;dh<=(c.lockH?0:c.flexH);dh+=1){if(!dw&&!dh)continue;const nw=c.width-dw,nh=c.height-dh;if(partValid(c,nw,nh))dims.push({w:nw,h:nh,loss:area(partPolygon(c))-area(partPolygon(c,nw,nh))});}
-   dims.sort((a,b)=>a.loss-b.loss);
+   // Minimize total width + height reduction; preserve more area on ties.
+   dims.sort((a,b)=>(c.width-a.w+c.height-a.h)-(c.width-b.w+c.height-b.h)||a.loss-b.loss);
    for(const d of dims){placement=placePart(d.w,d.h,m,c);if(placement){w=d.w;h=d.h;status='negotiated';break;}}
   }
   if(!placement)return {material:m,status:'rejected',reasons:['当前搜索范围内无可行放置：外形、孔边距离或加工留边不满足；可检查尺寸锁定与协商范围']};
