@@ -1,0 +1,23 @@
+/* Supplied brand artwork; independent full-resolution paper and roller layers. */
+.sidebar .brand-mark{width:76px;height:76px;padding:0;border:0;outline:0;background:none;box-shadow:none;transform:none;border-radius:50%;overflow:hidden;flex:none}
+.brand-mark img{display:block;width:100%;height:100%;object-fit:cover}
+.product-wordmark .image-wordmark{position:relative;display:block;width:215px;height:53px;overflow:hidden;flex:none;margin:0;background:none}
+.image-wordmark img{position:absolute;width:126%;height:auto;max-width:none;left:-12%;top:-36%;mix-blend-mode:screen}
+.image-wordmark{mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.product-wordmark .image-wordmark::before,.product-wordmark .image-wordmark::after{display:none}
+.supplied-scroll{height:auto!important;aspect-ratio:1828/860;isolation:isolate}
+.supplied-scroll .scroll-paper{inset:0;border:0;background:none;box-shadow:none;clip-path:inset(0 10%)}
+.supplied-paper-image,.supplied-scroll .scroll-roller{position:absolute;inset:0;width:100%;height:100%;background:url('./assets/tiangong-scroll.webp') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none}
+.supplied-scroll .scroll-roller::before,.supplied-scroll .scroll-roller::after{display:none}
+.supplied-scroll .roller-left{clip-path:inset(0 90% 0 0)}
+.supplied-scroll .roller-right{clip-path:inset(0 0 0 90%)}
+.intro-playing .supplied-scroll .scroll-paper{animation:supplied-paper-open 3s cubic-bezier(.23,.8,.3,1) both}
+.intro-playing .supplied-scroll .roller-left{animation:supplied-left-open 3s cubic-bezier(.23,.8,.3,1) both}
+.intro-playing .supplied-scroll .roller-right{animation:supplied-right-open 3s cubic-bezier(.23,.8,.3,1) both}
+@keyframes supplied-paper-open{0%,10%{clip-path:inset(0 49.5%)}44%,100%{clip-path:inset(0 10%)}}
+@keyframes supplied-left-open{0%,10%{transform:translateX(40%)}44%,100%{transform:translateX(0)}}
+@keyframes supplied-right-open{0%,10%{transform:translateX(-40%)}44%,100%{transform:translateX(0)}}
+@media(min-width:901px){.craft-stage{width:40%;max-width:440px;right:12px}.work-title{padding-right:43%;min-height:270px}}
+@media(max-width:1250px) and (min-width:681px){.sidebar .brand-mark{width:60px;height:60px}.sidebar .brand{padding-inline:0}}
+@media(max-width:680px){.sidebar .brand-mark{width:42px;height:42px}.product-wordmark .image-wordmark{width:145px;height:39px}.product-wordmark>span{display:none!important}.craft-stage{max-width:420px}.topbar{min-height:65px}.supplied-scroll{width:100%}}
+@media(prefers-reduced-motion:reduce){.supplied-scroll .scroll-paper{clip-path:inset(0 10%)}.supplied-scroll .scroll-roller{transform:none;left:0;right:0}}
